@@ -35,6 +35,7 @@ public class Raitings implements Serializable {
     )
     private String review;
 
+    //Muchos ratings tienen un a pelicula
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_")
     private Movies movie;

@@ -34,9 +34,7 @@ public class Movies implements Serializable {
     private List<Raitings> raitingsList;
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_autor")
-    private User user;
+
 
     public Movies() {
 
